@@ -1,0 +1,167 @@
+:root {
+    --bg-dark: #0b0813;
+    --card-bg: #13101e;
+    --input-bg: #1a162b;
+    --text-main: #f3f1f6;
+    --text-muted: #8b869c;
+    --border-color: #26213b;
+    --gradient-primary: linear-gradient(90deg, #a78bfa, #f59e0b);
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Navbar Layout */
+.navbar {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-links, .nav-actions {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.nav-item {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.nav-item.active {
+    background-color: #261e3d;
+    color: #c084fc;
+}
+
+/* Container & Layout Main Card */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px 20px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin: 10px 0;
+    background: linear-gradient(to right, #ffffff, #d8b4fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Feature Badges Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.feature-badge {
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: var(--text-main);
+}
+
+/* Inputs and Forms */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: var(--text-main);
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 14px;
+    color: var(--text-main);
+}
+
+small {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Drag and drop upload styling */
+.upload-zone {
+    border: 2px dashed var(--border-color);
+    background-color: var(--input-bg);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Action Button Layouts */
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-primary {
+    flex: 2;
+    background: var(--gradient-primary);
+    border: none;
+    color: #000;
+    font-weight: bold;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.btn-load-project {
+    flex: 1;
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    border-radius: 8px;
+    padding: 16px;
+}

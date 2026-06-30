@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <divclass="nav-links">
+            <button class="nav-item">🏠 Home</button>
+            <button class="nav-item">📖 Audiobook</button>
+            <button class="nav-item active">🎙️ Podcast Engine</button>
+        </div>
+        <div class="nav-actions">
+            <button class="btn-secondary">💾 Save</button>
+            <button class="btn-secondary">📁 Load</button>
+            <button class="btn-profile">P Admin Panel</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <div class="logo-icon">🤖</div>
+            <h1>Podcast Engine</h1>
+            <p class="subtitle">Transform any topic into a serialized 8-episode podcast series. Our AI Showrunner writes fully complex, TTS-optimized scripts with automatic open-loop stitching.</p>
+
+            <div class="features-grid">
+                <div class="feature-badge">⚡ AI Showrunner</div>
+                <div class="feature-badge">🔄 Sequential Engine</div>
+                <div class="feature-badge">📝 TTS-Ready Scripts</div>
+                <div class="feature-badge">📈 Built-in SEO</div>
+            </div>
+
+            <form id="engineForm">
+                <div class="input-group">
+                    <label for="topic">Podcast Topic *</label>
+                    <input type="text" id="topic" placeholder="The central theme of your series 8-episode series" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="audience">Target Audience</label>
+                    <input type="text" id="audience" value="Listeners and Readers" readonly>
+                    <small>Fixed audience — all podcast scripts are written for Listeners and Readers</small>
+                </div>
+
+                <div class="upload-zone">
+                    <div class="upload-icon">📄</div>
+                    <p>Drag & drop files here or click to browse</p>
+                    <small>Supports .txt, .md, .pdf, .docx — up to 50MB each</small>
+                </div>
+
+                <div class="input-group">
+                    <label for="source">Source Material (Optional)</label>
+                    <textarea id="source" rows="4" placeholder="0 characters — more material = more accurate episode scripting"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">✨ Launch The Engine</button>
+                    <button type="button" class="btn-load-project">📁 Load Project</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
